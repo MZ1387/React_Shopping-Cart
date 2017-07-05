@@ -1,6 +1,6 @@
 # React_Shopping-Cart
 
-A shopping cart application that uses React and Redux. Uses Node Express and MongoDB as the back end to interface with React Redux in the front end.
+A shopping cart application that uses React and Redux. Uses Node Express and MongoDB as the back end to interface with React and Redux in the front end.
 
 ## Technologies Used
 
