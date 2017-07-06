@@ -10,6 +10,7 @@ A shopping cart application that uses React and Redux. Uses Node Express and Mon
 - Express
 - MongoDB
 - API
+- React Bootstrap
 
 ## Concepts Implemented
 
