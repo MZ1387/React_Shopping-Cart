@@ -7,7 +7,7 @@ var PORT = 3000;
 
 app.use(express.static('public'));
 
-app.get('/', function(req, res) {
+app.get('*', function(req, res) {
   res.sendFile(path.resolved(__dirname, 'public', 'index.html'));
 })
 
