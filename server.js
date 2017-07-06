@@ -8,7 +8,7 @@ var PORT = 3000;
 app.use(express.static('public'));
 
 app.get('*', function(req, res) {
-  res.sendFile(path.resolved(__dirname, 'public', 'index.html'));
+  res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
 })
 
 app.listen(PORT, function() {
