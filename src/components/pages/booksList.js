@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { getBooks } from '../../actions/booksActions';
-import { Grid, Col, Row, Button } from 'react-bootstrap';
+import { Carousel, Grid, Col, Row, Button } from 'react-bootstrap';
 
 import BookItem from './bookItem';
 import BooksForm from './booksForm';
@@ -31,6 +31,24 @@ class BooksList extends Component {
 
     return(
       <Grid>
+        <Row>
+          <Carousel>
+            <Carousel.Item>
+              <img width={900} height={500} alt="900x500" src="https://assets.entrepreneur.com/content/3x2/1300/20150903173413-books-shop-fair-library-used-bookshelf-literature-study-textbooks.jpeg"/>
+              <Carousel.Caption>
+                <h3>Welcome to The BookShop</h3>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img width={900} height={500} alt="900x500" src="https://assets.entrepreneur.com/content/3x2/1300/20150903173413-books-shop-fair-library-used-bookshelf-literature-study-textbooks.jpeg"/>
+              <Carousel.Caption>
+                <h3>Welcome to The BookShop</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
+        </Row>
         <Row>
           <Cart />
         </Row>
