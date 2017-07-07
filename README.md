@@ -15,4 +15,5 @@ A shopping cart application that uses React and Redux. Uses Node Express and Mon
 ## Concepts Implemented
 
 - Server Side rendering
+- Proxy Server
 - App deployment to Heroku/AWS

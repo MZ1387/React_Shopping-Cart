@@ -11,7 +11,7 @@ import Cart from './cart'
 
 class BooksList extends Component {
   componentDidMount() {
-    this.props.getBooks;
+    this.props.getBooks();
   }
 
   render() {
@@ -51,7 +51,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({getBooks:getBooks}, dispatch)
+  return bindActionCreators({ getBooks }, dispatch)
 }
 
-export default connect(mapStateToProps)(BooksList);
+export default connect(mapStateToProps, mapDispatchToProps)(BooksList);
